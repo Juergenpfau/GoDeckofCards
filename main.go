@@ -1,11 +1,19 @@
 package main
 
-import
+import (
+	"fmt"
+)
 
-("fmt")
+func main() {
+	cards := deck{"Ace Of Diamonds", newCard()}
+	fmt.Println(cards)
+	cards = append(cards, "Six Of Spades")
 
+	for index, card := range cards {
+		fmt.Println(index, card)
+	}
+}
 
-func main()
- {
-
+func newCard() string {
+	return "Five Of Diamonds"
 }
