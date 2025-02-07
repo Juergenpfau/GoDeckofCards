@@ -9,9 +9,7 @@ func main() {
 	fmt.Println(cards)
 	cards = append(cards, "Six Of Spades")
 
-	for index, card := range cards {
-		fmt.Println(index, card)
-	}
+	cards.print()
 }
 
 func newCard() string {
